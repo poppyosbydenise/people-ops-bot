@@ -1,0 +1,14 @@
+{
+  "name": "people-ops-bot",
+  "version": "1.0.0",
+  "description": "People Ops Slack bot — task management + leadership board via Google Sheets",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@slack/bolt": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0"
+  }
+}

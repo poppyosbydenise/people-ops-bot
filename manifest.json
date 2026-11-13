@@ -1,0 +1,68 @@
+{
+  "display_information": {
+    "name": "People Ops Bot",
+    "description": "Task management + leadership board for the people ops team",
+    "background_color": "#1a1a2e"
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "People Ops Bot",
+      "always_online": true
+    },
+    "slash_commands": [
+      {
+        "command": "/tasks",
+        "description": "Show all open tasks (everyone)",
+        "usage_hint": "",
+        "should_escape": false
+      },
+      {
+        "command": "/mytasks",
+        "description": "Show your tasks only",
+        "usage_hint": "",
+        "should_escape": false
+      },
+      {
+        "command": "/add",
+        "description": "Add a task (assigned to you, or prefix with 'sam:' to assign to Sam)",
+        "usage_hint": "[sam:] task description",
+        "should_escape": false
+      },
+      {
+        "command": "/done",
+        "description": "Mark a task complete by number",
+        "usage_hint": "[task number]",
+        "should_escape": false
+      },
+      {
+        "command": "/board",
+        "description": "Show the leadership board now",
+        "usage_hint": "",
+        "should_escape": false
+      }
+    ]
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": [
+        "chat:write",
+        "commands",
+        "channels:read",
+        "groups:read",
+        "im:write",
+        "im:history"
+      ]
+    }
+  },
+  "settings": {
+    "event_subscriptions": {
+      "bot_events": []
+    },
+    "interactivity": {
+      "is_enabled": false
+    },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": true,
+    "token_rotation_enabled": false
+  }
+}
